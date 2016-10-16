@@ -44,8 +44,8 @@
             android:layout_alignParentStart="true"
             android:layout_below="@+id/textView"
 
-            android:layout_toLeftOf="@+id/spinner"
-            android:layout_toStartOf="@+id/spinner" />
+            android:layout_toLeftOf="@+id/spinnerKelas"
+            android:layout_toStartOf="@+id/spinnerKelas" />
 
         <TextView
             android:id="@+id/textView2"
@@ -118,28 +118,29 @@
             android:typeface="serif" />
 
         <RadioGroup
+            android:id="@+id/RadioGroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <RadioButton
-                android:id="@+id/RPL"
+                android:id="@+id/rpl1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/textView3"
                 android:checked="false"
-                android:text="btn_rpl" />
+                android:text="RPL" />
 
             <RadioButton
-                android:id="@+id/TKJ"
+                android:id="@+id/tkj1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
                 android:checked="false"
-                android:text="btn_tkj" />
+                android:text="TKJ" />
         </RadioGroup>
 
         <TextView
@@ -153,14 +154,15 @@
             android:typeface="serif" />
 
         <Spinner
-            android:id="@+id/spinner"
+            android:id="@+id/spinnerKelas"
             android:layout_width="376dp"
             android:layout_height="wrap_content"
             android:layout_above="@+id/button"
             android:layout_alignLeft="@+id/button"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_alignStart="@+id/button" />
+            android:layout_alignStart="@+id/button"
+            android:entries="@array/kls" />
 
         <Button
             android:id="@+id/button"
